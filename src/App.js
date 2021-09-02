@@ -1,6 +1,7 @@
 import React, {useState, useRef, useEffect} from "react";
 import TodoList from './TodoList'
 import {v4 as uuidv4} from 'uuid'
+import Pomodoro from './Pomodoro'
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
   useEffect(() =>{
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
-  }, [])
+  }, [todos])
 
 function toggleTodo(id){
   const newTodos = [...todos]
@@ -32,6 +33,7 @@ function toggleTodo(id){
   }
   return ( 
     <>
+      <Pomodoro/>
       <TodoList todos={todos} toggleTodo={toggleTodo}/>
       <input ref={todoNameRef} type="text"/>
       <button onClick={handleAddTodo}>Add Todo</button>
