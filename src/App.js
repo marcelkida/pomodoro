@@ -68,7 +68,7 @@ const App = () => {
           </li>
           <li>
             <Button 
-              title="short break" 
+              title="short" 
               activeClass={executing.active === 'short' ? 'active-label' : undefined} 
               _callback={() => setCurrentTimer('short')}
               //onClick= {document.documentElement.style.setProperty('--color', '#74BA7B')} 
@@ -76,7 +76,7 @@ const App = () => {
           </li>
           <li>
             <Button 
-              title="long break" 
+              title="long" 
               activeClass={executing.active === 'long' ? 'active-label' : undefined} 
               _callback={() => setCurrentTimer('long')} 
               //onClick= {document.documentElement.style.setProperty('--color', '#7490ba')}
