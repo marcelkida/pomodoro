@@ -1,0 +1,128 @@
+:root{
+  --color: #9974ba;
+}
+@font-face {
+  font-family: oswald;
+  src: url(Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: ptmono;
+  src: url(PTMono-Regular.ttf);
+}
+body {
+  margin: 0;
+  font-family: oswald;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: ptmono;
+}
+
+.container {
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #121212;
+}
+
+.container h1 {
+  font-size:2.6rem;
+  margin-bottom:0.2rem;
+}
+
+.container .labels {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding:.3rem .3rem;
+  background-color: #121212;
+}
+
+.active-label {
+  color: #FFFFFF;
+  background-color: var(--color);
+}
+
+.timer-container {
+  display: flex;
+  flex:2;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  width: 15rem;
+  color:#efefef;
+  background: #121212;
+  font-size: 3.5rem;
+
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2rem;
+  font-family: ptmono;
+}
+
+button {
+  color:#efefef;
+  font-size:0.8rem;
+  padding: 0.5rem 1.2rem;
+  border:none;
+  margin:0.2rem;;
+  background:#292929;
+  min-width: 80px;
+  cursor: pointer;
+  font-family: ptmono;
+}
+
+.button-wrapper button.activve {
+  color: #0C0E1B;
+  background-color: #FFFFFF;
+  border: 1px solid #0C0E1B;
+}
+.form-container {
+  text-align: center;
+}
+.input-wrapper {
+  margin: 1.5rem;
+}
+.input-wrapper input {
+  height: 20%;
+  width: 20%;
+  margin-left: 10vw;
+  padding: 2rem;
+  background-color:var(--color);
+  color:#FFFFFF;
+  border: none;
+  margin-right: 0.3rem;
+  text-align: center;
+  font-size: 14pt;
+  display: flex;
+  justify-content: center;
+}
+.input-title{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  outline: none;
+
+}
+input[type=checkbox]:checked{
+  background-color: var(--color);
+}
