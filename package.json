@@ -1,6 +1,6 @@
 {
   "homepage": "https://marcelkida.github.io/pomodoro",
-  "deploy" : "npm run build&&gh-pages -d build",
+  "deploy": "npm run build&&gh-pages -d build",
   "name": "pomodoro-app",
   "version": "0.1.0",
   "private": true,
